@@ -1,0 +1,26 @@
+{
+  "projects": "Proyectos",
+  "Frontend": "Frontend",
+  "Fullstack": "Fullstack",
+  "Machine Learning": "Machine Learning",
+  "Deep Learning": "Deep Learning",
+  "menuOptions": {
+    "item_0": "ACERCA DE",
+    "item_1": "DEVELOPER",
+    "item_2": "DATA ANALYST",
+    "item_3": "HABILIDADES",
+    "item_4": "CONTACTO"
+  },
+  "tagsDeveloper": {
+    "item_0": "App Web",
+    "item_1": "App Móvil",
+    "item_2": "Frontend",
+    "item_3": "Fullstack",
+    "item_4": "Todos"
+  },
+  "tagsDataAnalyst": {
+    "item_0": "Machine Learning",
+    "item_1": "Deep Learning",
+    "item_2": "Todos"
+  }
+}

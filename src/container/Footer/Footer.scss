@@ -56,8 +56,25 @@
     }
 }
 
+.app__footer-card-email {
+    box-shadow: 0 8px 8px -4px lightpink;
+}
+
+.app__footer-card-phone {
+    box-shadow: 0 8px 8px -4px lightblue;
+}
+
 .app__footer-cards .app__footer-card:last-child {
     background-color: #f2f7fb;
+}
+
+.app__footer-button {
+    box-shadow: 0 8px 8px -4px rgb(14, 5, 140);
+    border: none;
+
+    &:hover {
+        box-shadow: 0 0 25px #fef4f5;
+    }
 }
 
 .app__footer-form {
@@ -79,7 +96,7 @@
             width: 100%;
             padding: 0.95rem;
             border: none;
-            border-radius: 7px;
+            box-shadow: 0 8px 8px -4px lightblue;
             background-color: var(--primary-color);
 
             font-family: var(--font-base);

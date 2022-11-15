@@ -43,16 +43,16 @@ const Footer = () => {
       <h2 className='head-text'>Take a coffee and chat with me</h2>
 
       <div className='app__footer-cards'>
-        <div className='app__footer-card'>
+        <div id='email' className='app__footer-card app__footer-card-email'>
           <img src={images.email} alt='email' />
           <a href='mailto:hello@micael.com' className='p-text'>
-            hello@micael.com
+            jperez@idubeasistemas.es
           </a>
         </div>
-        <div className='app__footer-card'>
+        <div className='app__footer-card app__footer-card-phone'>
           <img src={images.mobile} alt='email' />
-          <a href='tel: +1 (123) 456-789' className='p-text'>
-            tel: +1 (123) 456-789
+          <a href='tel:+34 610 164 878' className='p-text'>
+            tel: +34 610 164 878
           </a>
         </div>
       </div>
@@ -78,8 +78,8 @@ const Footer = () => {
                 onChange={handleChangeInput}
               />
             </div>
-            <button type='button' className='p-text' onClick={handleSubmit}>
-              {loading ? 'Sending' : 'Sent Message'}
+            <button type='button' className='app__footer-button' onClick={handleSubmit}>
+              {loading ? 'Sending' : 'Send Message'}
             </button>
           </div>
         :
