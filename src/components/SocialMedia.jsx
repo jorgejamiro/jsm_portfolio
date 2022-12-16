@@ -1,19 +1,30 @@
 import React from 'react';
-import { BsTwitter, BsInstagram } from 'react-icons/bs';
-import { FaFacebookF } from 'react-icons/fa';
+import { BsFillTelephoneFill, BsLinkedin } from 'react-icons/bs';
+import { AiFillMail, AiOutlineForm } from 'react-icons/ai';
 
 
 const SocialMedia = () => {
   return (
     <div className='app__social'>
         <div>
-            <BsTwitter />
+          <a href='https://www.linkedin.com/in/jorgemanuelperezaguilar/' target='_blank' className='p-text'>
+            <BsLinkedin />
+          </a>
         </div>
         <div>
-            <FaFacebookF />
+          <a href='tel:+34 610 164 878' className='p-text'>
+            <BsFillTelephoneFill />
+          </a>
         </div>
         <div>
-            <BsInstagram />
+          <a href='mailto:jperez@idubeasistemas.es' className='p-text'>
+            <AiFillMail />
+          </a>
+        </div>
+        <div>
+          <a href='#contact' className='p-text'>
+            <AiOutlineForm />
+          </a>
         </div>
     </div>
   );

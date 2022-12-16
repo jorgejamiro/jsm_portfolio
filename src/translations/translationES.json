@@ -4,6 +4,16 @@
   "Fullstack": "Fullstack",
   "Machine Learning": "Machine Learning",
   "Deep Learning": "Deep Learning",
+  "Skills": "Habilidades",
+  "Have a little break and": "Tómate un pequeño descanso y",
+  "contact": "contacta",
+  "me": "conmigo",
+  "Your Name": "Tu Nombre",
+  "Your Email": "Tu Email",
+  "Your Message": "Tu Mensaje",
+  "Send Message": "Enviar Mensaje",
+  "Sending...": "Enviando...",
+  "Thank you for getting in touch": "Gracias por ponerte en contacto",
   "menuOptions": {
     "item_0": "ACERCA DE",
     "item_1": "DEVELOPER",
@@ -14,13 +24,14 @@
   "tagsDeveloper": {
     "item_0": "App Web",
     "item_1": "App Móvil",
-    "item_2": "Frontend",
-    "item_3": "Fullstack",
-    "item_4": "Todos"
+    "item_2": "Fullstack",
+    "item_3": "Frontend",
+    "item_4": "Backend",
+    "item_5": "TODOS"
   },
   "tagsDataAnalyst": {
     "item_0": "Machine Learning",
     "item_1": "Deep Learning",
-    "item_2": "Todos"
+    "item_2": "TODOS"
   }
 }

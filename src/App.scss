@@ -10,6 +10,21 @@
 .app__primarybg {
     background-color: var(--primary-color);
 }
+
+.app__databg {
+  background-image: url('./assets/background_data.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+.app__developerbg {
+  background-image: url('./assets/background_developer.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
   
 .app__container {
     width: 100%;

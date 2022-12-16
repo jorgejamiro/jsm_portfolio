@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { AiFillEye, AiFillGithub } from 'react-icons/ai';
-import  { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import { useTranslation } from 'react-i18next';
 
@@ -19,8 +19,6 @@ const WorkFilter = ({ data }) => {
 
     useEffect(() => {
         const query = `*[_type == "works" && "${allTag}" in tags]`;
-
-        
 
         client.fetch(query)
         .then((data) => {

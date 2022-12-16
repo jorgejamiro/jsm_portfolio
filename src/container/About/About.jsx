@@ -5,12 +5,16 @@ import { motion } from 'framer-motion';
 
 import { urlFor, client } from '../../client.js';
 
+import { useTranslation } from 'react-i18next';
+
 import './About.scss';
 
 
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
+  const { i18n } = useTranslation();
+  const lng = i18n.language;
 
   useEffect(() => {
     const query = '*[_type == "abouts"]';
@@ -22,7 +26,7 @@ const About = () => {
   
   return (
     <>
-      <h2 className='head-text'>I know that <span>Good Apps</span><br /> means <span>Good Business</span></h2>
+      <h2 className='head-text'><span>Developer</span> & <span>Data Analyst</span></h2>
 
       <div className='app__profiles'>
         {
@@ -35,8 +39,8 @@ const About = () => {
               key={about.title + index}
             >
               <img src={urlFor(about.imgUrl)} alt={about.title} />
-              <h2 className='bold-text' style={{ marginTop: 20}} >{about.title}</h2>
-              <p className='p-text' style={{ marginTop: 20}} >{about.description}</p>
+              <h2 className='bold-text' style={{ marginTop: 20}} >{about.title[lng]}</h2>
+              <div className='p-text' style={{ marginTop: 20, textAlign: 'justify'}} dangerouslySetInnerHTML={{__html: about.description[lng]}} />
             </motion.div>
           ))
         }

@@ -20,5 +20,5 @@ const WorkData = () => {
 export default AppWrap(
     MotionWrap(WorkData, 'app__works'),
     'workData',
-    'app__whitebg',
+    'app__databg',
 );

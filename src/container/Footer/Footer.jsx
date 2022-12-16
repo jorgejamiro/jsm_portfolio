@@ -4,6 +4,8 @@ import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
 
+import { useTranslation } from 'react-i18next';
+
 import './Footer.scss';
 
 
@@ -11,8 +13,8 @@ const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: ''});
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-
   const { name, email, message } = formData;
+  const { t } = useTranslation();
 
   const handleChangeInput = (e) => {
   const { name, value }  = e.target;
@@ -40,12 +42,12 @@ const Footer = () => {
 
   return (
     <>
-      <h2 className='head-text'>Take a coffee and chat with me</h2>
+      <h2>{t('Have a little break and')} <span style={{ color: '#313bac'}}> {t('contact')}</span> {t('me')}</h2>
 
       <div className='app__footer-cards'>
         <div id='email' className='app__footer-card app__footer-card-email'>
           <img src={images.email} alt='email' />
-          <a href='mailto:hello@micael.com' className='p-text'>
+          <a href='mailto:jperez@idubeasistemas.es' className='p-text'>
             jperez@idubeasistemas.es
           </a>
         </div>
@@ -62,29 +64,29 @@ const Footer = () => {
 
           <div className='app__footer-form app__flex'>
             <div className='app__flex'>
-              <input className='p-text' type='text' placeholder='Your Name'
+              <input className='p-text' type='text' placeholder={t('Your Name')}
                     name='name' value={name} onChange={handleChangeInput} />
             </div>
             <div className='app__flex'>
-              <input className='p-text' type='text' placeholder='Your Email'
+              <input className='p-text' type='text' placeholder={t('Your Email')}
                     name='email' value={email} onChange={handleChangeInput} />
             </div>
             <div>
               <textarea
                 className='p-text'
-                placeholder='Your Message'
+                placeholder={t('Your Message')}
                 value={message}
                 name='message'
                 onChange={handleChangeInput}
               />
             </div>
             <button type='button' className='app__footer-button' onClick={handleSubmit}>
-              {loading ? 'Sending' : 'Send Message'}
+              {loading ? t('Sending...') : t('Send Message')}
             </button>
           </div>
         :
           <div>
-            <h3 className='head-text'>Thank you for getting in touch</h3>
+            <h3 className='head-text'>{t('Thank you for getting in touch')}</h3>
           </div>
       }
     </>
